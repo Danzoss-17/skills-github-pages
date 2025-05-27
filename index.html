@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthBell Gym</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Health<span>Bell</span></div>
+    <ul class="nav-links">
+      <li onclick="showSection('home')">Home</li>
+      <li onclick="showSection('about')">About us</li>
+      <li onclick="showSection('pricing')">Pricing</li>
+      <li onclick="showSection('gallery')">Gallery</li>
+      <li onclick="showSection('training')">Training</li>
+      <li onclick="showSection('contact')">Contact</li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section active">
+    <div class="hero">
+      <h1>START YOUR JOURNEY <span>TODAY</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button>Join Now</button>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="about-container">
+      <h2>ABOUT US</h2>
+      <p>we believe that everyone deserves to feel strong, confident, and empowered. Our journey began with a simple yet powerful vision: to create a space where people from all walks of life can come together to pursue their health and wellness goals in a supportive, inclusive, and motivating environment. Whether you’re stepping into the gym for the first time or you’re a seasoned athlete looking to take your training to the next level, our doors—and our arms—are open wide for you. To empower individuals to achieve their best selves through movement, education, and support.
+
+        We are committed to helping every member of our gym build sustainable habits, reach their goals, and enjoy the process. We don’t believe in quick fixes or one-size-fits-all plans. Instead, we emphasize consistency, proper coaching, and holistic wellness</p>
+      <a href="#">Learn More</a>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="pricing-container">
+      <h2>Sport Gym Membership</h2>
+      <p>14 days unlimited free trial. No contact or credit card required</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Single session</h3>
+          <p>$15/mo</p>
+          <ul>
+            <li>Personalized workout</li>
+            <li>Exercise form correction</li>
+            <li>Lifestyle plan</li>
+          </ul>
+          <button>Choose Plan</button>
+        </div>
+        <div class="card">
+          <h3>Single session</h3>
+          <p>$15/mo</p>
+          <ul>
+            <li>Personalized workout</li>
+            <li>Exercise form correction</li>
+            <li>Lifestyle plan</li>
+          </ul>
+          <button>Choose Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>GALLERY</h2>
+    <p>See what our gym looks like</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="image.png/GALLEY1.jpg" alt="Gym Photo 1">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image.png/GALLERY2.jpg" alt="Gym Photo 2">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image.png/TRAINER2.jpg" alt="Gym Photo 3">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image.png/TRAINER3.jpg" alt="Gym Photo 4">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="training" class="section">
+    <div class="training-container">
+      <h2>TRAINING</h2>
+      <p>We provide various training programs tailored to your goals including strength, endurance, flexibility. In today’s fast-paced world, maintaining physical fitness is not just a lifestyle choice—it’s a necessity for long-term health, mental well-being, and quality of life. A well-equipped gym is more than just a room full of weights and machines; it’s a transformative environment that offers a wide variety of training programs tailored to different goals, abilities, and preferences. From beginners looking to kickstart their journey to athletes seeking peak performance, the training provided at a professional gym can empower individuals to achieve outstanding results.  A modern gym is more than just a place to lift weights—it is a comprehensive wellness center offering a full spectrum of training solutions for every fitness journey. Whether your goal is to gain strength, improve endurance, recover from injury, or simply feel better every day, the variety of training available ensures there’s a program tailored just for you.
+
+        At PulseFit Gym (or insert your gym's name), we take pride in offering diverse, expert-led training options that are accessible, inclusive, and results-driven. No matter your background, goal, or fitness level, you’ll find a place here, along with the support and knowledge to thrive.
+        
+        Your goals are our mission. Let us help you train smart, train strong, and live your best life.
+         and more.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="contact-container">
+      <h2>CONTACT</h2>
+      <p>Reach out to us via phone, email, or visit our gym location.</p>
+    </div>
+  </section>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll(".section");
+      sections.forEach(section => {
+        section.classList.remove("active");
+      });
+      document.getElementById(sectionId).classList.add("active");
+    }
+  </script>
+</body>
+</html>
